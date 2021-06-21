@@ -154,3 +154,64 @@ d) Below them, create a green-coloured "Create" button at the centre which at th
 **![](https://images.upgrad.com/224af8c8-027e-4731-bfbd-d956ebf12750-create.png)**
 
 e) Also create a tiny cross button at the top-right corner of the modal, which when clicked, would close the modal.
+
+
+# Part B: Creating list of blogs
+
+In this section, we would be creating a page called "bloglist.html" which would display the list of all blog posts.
+
+Relevant files to work on:  **bloglist.html, bloglist.css, bloglist.js**
+
+Recall that in the previous section, you created an "All Posts" button on the centre of the screen which when clicked, would redirect to a "bloglist.html" page. We would be designing this page (“bloglist.html”) in this section. The final outcome of creating this page would be like this:-
+
+**![](https://images.upgrad.com/07bf0cae-6530-480e-9e00-71c2d2be3f9b-bloglist.png)**
+
+Some very important things to keep in mind:
+
+1. You must strictly keep HTML, CSS and Javascript portion of the code separate from each other (in separate files)
+
+2. You must refer to the "bloglist.css" file inside the "css" folder and define all your css inside that file (for the "bloglist.html" file)
+
+3. You must refer to the "bloglist.js" file inside the "js" folder and define all your Javascript inside that file (for the "bloglist.html" file)
+
+4. Unless explicitly mentioned (for example, at some places, it might be mentioned that a certain button MUST be red in colour), you can customize your own CSS for any HTML element you want. However, please keep in mind that the overall appearance of any HTML page must be very similar (if not identical) to the outcome of the screen mentioned prior of each part of the assignment. This means that if certain elements are placed towards the top-right of the screen in the final outcome figure, they MUST be placed at the top-right corner ONLY, failing to do so will lead to deduction of marks. Note that there might be multiple ways in which a certain CSS effect can be achieved. So the exact syntax of the CSS code does not matter, but the overall appearance of any given page must be very similar to the expected outcome.
+
+Let us move step-by-step to create this page:-
+
+1. Write the header class into our page.
+
+Carefully place the code for the header class which you created in the last section of the assignment. Basically, we want the header part of the page to be exactly identical to the header portion which we created for the last section.
+
+2. Below the header, you will create a segment which will consist of 5 identical blog posts and place them next to each other in pairs. Each blog post will display the username of the user towards the left (which will be already provided). Keep the background color of the page as orange. One such blog post without any CSS has been provided to you. You need to make the new blog post as the copy of this blog post. We would suggest that you modify this blog post first and then copy paste this blog post to the new one.
+
+a) Towards the right of the username, you need to  **partially** display the text of the blog. Note that you must not display the entire text of the blog on this page itself. (You must search the Internet to find out a way such that for each blog, the text is only partially displayed on this page.
+
+**A hint:** there is a CSS display property which enables you to partially hide content. (You can search on the Internet about it)
+
+**You need not alter the sample text already specified in the blog author/title/body. You only need to change its appearance.**
+
+b) You need to add a "trash" icon towards the top-right of each blog post (inside each element of the "post-content" class) like this:
+
+**![](https://images.upgrad.com/cc27bd2b-b823-450f-a8e8-6d251b5671de-icon.png)**
+
+On clicking the trash icon, it should display the following modal like this:-
+
+**![](https://images.upgrad.com/2846eb61-b649-4f73-8f35-62a020007c7b-delete.png)**
+
+This modal would consist of a red-coloured "Yes" button and a green-coloured "No" button. No action would take place on clicking the "Yes" button. On clicking the "No" button, the modal should disappear and the bloglist page should appear again as it is.
+
+c) You need to adjust the width/height/flex/margin/other properties of each blog post carefully such that only two of such blog posts appear in one line.
+
+Additionally, you need to make the display of these boxes flexible so that when you change the display size of the screen, the blog posts adjust their placement automatically. This means that whatever screen size we reduce our screen to, there should be exactly two blog posts in each row. They should adjust their height/width automatically when the screen is resized. For example, if I resize my window, the blog posts should get adjusted on their own like this:
+
+**![](https://images.upgrad.com/7a36d09b-1b33-4ba8-a89a-b5edaf899eec-adjust.png)**
+
+You must search online to find out a way to display only two blog posts at a time such that every new post either gets added to the right or below the current post.
+
+d) There is a small icon/text "..." next to each post like this:
+
+**![](https://images.upgrad.com/0c9402b7-5243-4c00-9699-0c6379839709-icon2.png)**
+
+On clicking this icon/text, it should open the individual blog post. As of now, what you can do, is redirect it to a new page called as "post.html" whenever the "..." button is clicked.
+
+(You can keep this page empty as of now, and we will fill it later in the next section of our assignment.)
