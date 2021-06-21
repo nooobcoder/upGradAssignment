@@ -52,7 +52,7 @@ body {
 	height: 100%; /* Full height */
 	overflow: auto; /* Enable scroll if needed */
 	background-color: rgb(0, 0, 0); /* Fallback color */
-	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+	background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
@@ -94,6 +94,10 @@ body {
 	font-weight: bold;
 }
 
+#compose_post_title {
+	width: 50%;
+}
+
 .input_container input {
 	margin-top: 5px;
 	background-color: #f1f1f1;
@@ -106,7 +110,22 @@ body {
 	height: 40px;
 }
 
-#btn_sign_up_submit {
+.input_container textarea {
+	margin-top: 5px;
+	background-color: #f1f1f1;
+	padding: 5px 15px;
+	width: 100%;
+	font-family: inherit;
+	font-size: inherit;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border: none;
+	height: 200px;
+}
+
+#btn_sign_up_submit,
+#btn_sign_in_submit {
 	background-color: #5eb762;
 	width: 100%;
 	color: white;
@@ -117,4 +136,26 @@ body {
 	height: 40px;
 	cursor: pointer;
 	border: none;
+}
+
+#btn_create_post_submit {
+	background-color: #5eb762;
+	width: 15%;
+	color: white;
+	margin: 0 auto;
+	display: block;
+	box-sizing: border-box;
+	font-size: 15px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	height: 35px;
+	cursor: pointer;
+	border: none;
+}
+
+.sign_in_modal_footer {
+	margin-top: 30px;
+	font-family: sans-serif;
+	font-weight: bold;
+	text-align: center;
 }

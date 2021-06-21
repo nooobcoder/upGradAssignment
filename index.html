@@ -18,6 +18,7 @@
 			href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
 			rel="stylesheet"
 		/>
+
 	</head>
 	<body>
 		<!-- TODO: Include all your code for the header and home page here -->
@@ -28,12 +29,12 @@
 				<div id="header_logo_tag">Explore, Imagine, Create</div>
 			</div>
 			<div id="button_container">
-				<button id="btn_sign_in">Sign In</button
+				<button id="btn_sign_in" onclick="showSignInModal()">Sign In</button
 				><button id="btn_sign_up" onclick="showSignUpModal()">Sign Up</button>
 			</div>
 		</header>
 
-		<!-- The Modal -->
+		<!-- The Sign Up Modal -->
 		<div id="signUpModal" class="modal">
 			<!-- Modal content -->
 			<div class="modal-content">
@@ -49,6 +50,7 @@
 							<label for="full_name">Full Name</label>
 						</div>
 						<input
+						required
 							type="text"
 							name="full_name"
 							id="full_name"
@@ -60,6 +62,7 @@
 							<label for="user_name">Username</label>
 						</div>
 						<input
+						required
 							type="text"
 							name="user_name"
 							id="user_name"
@@ -71,7 +74,8 @@
 							<label for="password">Password</label>
 						</div>
 						<input
-							type="text"
+						required
+							type="password"
 							name="password"
 							id="password"
 							placeholder="Enter Password"
@@ -82,7 +86,8 @@
 							<label for="confirm_password">Confirm Password</label>
 						</div>
 						<input
-							type="text"
+						required
+							type="password"
 							name="confirm_password"
 							id="confirm_password"
 							placeholder="Confirm Password"
@@ -92,15 +97,97 @@
 					</form>
 			</div>
 		</div>
+		
+
+		<!-- The Sign In Modal -->
+		<div id="signInModal" class="modal">
+			<!-- Modal content -->
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<div class="modal_header">
+					<h2>Welcome Back!</h2>
+					<hr />
+				</div>
+
+					<form action="POST">
+					<div class="input_container">
+						<div>
+							<label for="signin_user_name">Username</label>
+						</div>
+						<input
+						required
+							type="text"
+							name="signin_user_name"
+							id="signin_user_name"
+							placeholder="Enter Username"
+						/>
+					</div>
+					<div class="input_container">
+						<div>
+							<label for="signin_password">Password</label>
+						</div>
+						<input
+						required
+							type="password"
+							name="signin_password"
+							id="signin_password"
+							placeholder="Enter Password"
+						/>
+					</div>
+					<button id="btn_sign_in_submit" type="submit">Sign In</button>
+					<div class="sign_in_modal_footer">Not a member? <a href="#" onclick="raiseSignUp()">Sign Up</a></div>
+					</form>
+					</div>
+		</div>
+
+
+		<!-- The Compose Post Modal -->
+		<div id="composePostModal" class="modal">
+			<!-- Modal content -->
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<div class="modal_header">
+					<h2>Pen Your Post</h2>
+				</div>
+
+					<form action="POST">
+					<div class="input_container">
+						<div>
+							<label for="compose_post_title">Title:</label>
+						</div>
+						<input
+						required
+							type="text"
+							name="compose_post_title"
+							id="compose_post_title"
+						/>
+					</div>
+					<div class="input_container">
+						<div>
+							<label for="compose_post_content">Content</label>
+						</div>
+						<textarea
+						required
+							type="password"
+							name="compose_post_content"
+							id="compose_post_content"
+						></textarea>
+
+					</div>
+					<button id="btn_create_post_submit" type="submit">Create</button>
+					</form>
+					</div>
+		</div>
 
 		<div id="container">
 			<div class="button_container">
-				<button id="btn_all_posts" onclick="console.log('Hi')">
-					All Posts
+				<button id="btn_all_posts" onclick="location.href='html/postslist.html'">
+						All Posts
 				</button>
-				<button id="btn_create_post">Create Post</button>
+				<button id="btn_create_post" onclick="showComposePostModal()">Create Post</button>
 			</div>
 		</div>
-		<script src="index.js"></script>
+
+		<script src="index.js" type="text/javascript" async></script>
 	</body>
 </html>
