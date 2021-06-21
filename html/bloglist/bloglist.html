@@ -69,6 +69,7 @@
 								<td></td>
 								<td colspan="2">
 									<i
+										onclick="location.href='../posts/post.html'"
 										class="fas fa-ellipsis-h"
 										style="bottom: 0"
 									></i>
@@ -107,6 +108,7 @@
 								<td></td>
 								<td colspan="2">
 									<i
+										onclick="location.href='../posts/post.html'"
 										class="fas fa-ellipsis-h"
 										style="bottom: 0"
 									></i>
@@ -146,6 +148,7 @@
 								<td></td>
 								<td colspan="2">
 									<i
+										onclick="location.href='../posts/post.html'"
 										class="fas fa-ellipsis-h"
 										style="bottom: 0"
 									></i>
@@ -184,6 +187,7 @@
 								<td></td>
 								<td colspan="2">
 									<i
+										onclick="location.href='../posts/post.html'"
 										class="fas fa-ellipsis-h"
 										style="bottom: 0"
 									></i>
@@ -224,6 +228,7 @@
 								<td></td>
 								<td colspan="2">
 									<i
+										onclick="location.href='../posts/post.html'"
 										class="fas fa-ellipsis-h"
 										style="bottom: 0"
 									></i>
@@ -243,10 +248,15 @@
 					<h3>Are you sure you want to delete this post?</h3>
 				</div>
 
-				<form class="delete_post_modal">
+				<div class="delete_post_modal">
 					<button id="btn_delete_post_yes" type="submit">Yes</button
-					><button id="btn_delete_post_no" type="submit">No</button>
-				</form>
+					><button
+						id="btn_delete_post_no"
+						onclick="hideDeletePostModal()"
+					>
+						No
+					</button>
+				</div>
 			</div>
 		</div>
 

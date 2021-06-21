@@ -1,8 +1,10 @@
 var deletePostModal = document.getElementById("composePostModal");
 
 const showDeletePostModal = () => {
-	console.log("Showing");
 	deletePostModal.style.display = "block";
+};
+const hideDeletePostModal = () => {
+	deletePostModal.style.display = "none";
 };
 
 // When the user clicks anywhere outside of the modal, close it

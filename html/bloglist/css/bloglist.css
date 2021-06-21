@@ -20,6 +20,10 @@ body {
 	color: white;
 }
 
+#header {
+	margin-bottom: 5px;
+}
+
 .blog_container_row {
 	display: flex;
 	margin-bottom: 15px;
@@ -34,6 +38,9 @@ body {
 	margin: 0px 50px;
 	max-height: 300px;
 	overflow: auto;
+	box-shadow: -7px 8px 15px -2px #cd8212;
+	-webkit-box-shadow: -7px 8px 15px -2px #cd8212;
+	-moz-box-shadow: -7px 8px 15px -2px #cd8212;
 }
 
 table .author_name {
@@ -54,7 +61,7 @@ table {
 
 table .cardcontent {
 	padding: 10px;
-
+	font-size: 13px;
 	text-align: justify;
 	text-justify: inter-word;
 }
