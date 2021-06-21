@@ -38,3 +38,51 @@ Please follow the following best practices when using Git and GitHub to strive t
 -   Make small and incremental commits.
 -   Make sure your code works before committing it.
 -   Write brief and relevant commit messages.
+
+# Part A: Creating the Homepage
+
+:::info
+Relevant files to work on: index.html, index.js, header.js, index.css, header.css
+
+:::
+
+Once you download the zipped folder, you will see a file called "index.html" at the root level of that folder. You must open that file and add your code in that file.
+
+This "index.html" file will be the file of your homepage. The final outcome of creating your homepage should look like this:-
+
+![](misc/screenshots/homepage-screenshot.jpeg)
+
+Some very important things to keep in mind:
+
+1. You must strictly keep HTML, CSS and Javascript portion of the code separate from each other (in separate files)
+2. You must refer to the "index.css" file inside the "css" folder and define all your css inside that file (for the "index.html" file)
+3. You must refer to the "index.js" file inside the "js" folder and define all your Javascript inside that file (for the "index.html" file)
+4. Unless explicitly mentioned otherwise (for example, at some places, it might be mentioned that a certain button MUST be red in colour), you can customize your own CSS for any HTML element you want. However, please keep in mind that the overall appearance of any HTML page must be very similar (if not identical) to the outcome of the screen mentioned prior of each part of the assignment. This means that if certain elements are placed towards the top-right of the screen in the final outcome figure, they MUST be placed at the top-right corner ONLY, failing to do so will lead to deduction of marks. Note that there might be multiple ways in which a certain CSS effect can be achieved. So the exact syntax of the CSS code does not matter, but the overall appearance of any given page must be very similar to the expected outcome.
+
+Let us now begin our step by step process of creating our homepage.
+
+Our homepage will consist of 2 main segments:-
+
+a) **Header** = You will be re-using it at many other places in the assignment. Hence, we will keep it as a separate class altogether
+
+This will be the header portion which should look like this:
+
+![](misc/screenshots/homepage-screenshot-2.jpeg)
+
+You are already provided with the Scribbler Logo and The tagline. You've also been provided with the buttons. You need to add functionality to them.
+
+You will need to create a total of 2 **modals** for the header. You must find on the Internet ways to create a simple basic modal. You can use the below link to find a simple modal code:
+
+You have been provided with the Create Post Modal in the Stub provided to you. You can reference that for further information.
+
+<https://www.w3schools.com/howto/howto_css_modals.asp>
+
+**Dont forget to keep different div id's for the different modals, so that they are distinct from one another!**
+
+b) The segment called "**postButtons**" consist of 2 buttons -
+
+"**All Posts**" and
+
+"**Create Post**"
+
+![](misc/screenshots/homepage-screenshot-3.jpeg)
