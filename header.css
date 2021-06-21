@@ -1,0 +1,30 @@
+body {
+	background-image: url("images/background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#header_logo {
+	font-family: "Dancing Script", sans-serif;
+	font-size: 50px;
+	font-weight: 600;
+	color: #2d37ff;
+}
+
+#header_logo_tag {
+	font-family: "Dancing Script", sans-serif;
+	font-weight: 400;
+}
+
+#btn_sign_in,
+#btn_sign_up {
+	background-color: #2d37ff;
+	color: white;
+	padding: 5px 15px;
+	margin: 4px 5px;
+}
