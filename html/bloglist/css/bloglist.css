@@ -1,0 +1,123 @@
+html,
+body {
+	margin: 0px;
+	margin-bottom: 5px;
+	padding: 0px;
+}
+
+body {
+	background-color: orange;
+	background-repeat: repeat-x;
+	background-size: cover;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#header_logo_tag {
+	color: white;
+}
+
+.blog_container_row {
+	display: flex;
+	margin-bottom: 15px;
+	align-items: center;
+	flex-direction: row;
+
+	justify-content: space-evenly;
+}
+
+.blog_card {
+	display: block;
+	margin: 0px 50px;
+	max-height: 300px;
+	overflow: auto;
+}
+
+table .author_name {
+	background-color: white;
+	color: black;
+	padding: 15px 30px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	font-weight: 600;
+	text-align: center;
+}
+
+table {
+	border-radius: 10px;
+
+	background-color: #e8e8e8;
+}
+
+table .cardcontent {
+	padding: 10px;
+
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+table i {
+	cursor: pointer;
+	padding-right: 20px;
+	padding-bottom: 8px;
+}
+
+.one_content {
+	margin: 0px 25%;
+}
+
+/* MODAL */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+	background-color: #fefefe;
+	margin: 5% auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 35%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.modal_header {
+	font-family: "Roboto Condensed";
+	font-size: 20px;
+	text-align: center;
+}
+
+.delete_post_modal {
+	display: flex;
+	align-items: center;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+.delete_post_modal button {
+	width: 40%;
+	height: 40px;
+	cursor: pointer;
+	color: white;
+	font-size: 15px;
+	border: none;
+}
+
+#btn_delete_post_yes {
+	background-color: #e45449;
+}
+
+#btn_delete_post_no {
+	background-color: #5eb762;
+}

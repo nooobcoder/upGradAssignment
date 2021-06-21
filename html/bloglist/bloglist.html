@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Blog List</title>
+		<link rel="stylesheet" href="../../header.css" />
+		<link rel="stylesheet" href="./css/bloglist.css" />
+		<!-- TODO: Include Font Awesome file here -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		/>
+		<!-- TODO: Include Google Fonts file here -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header id="header">
+			<div id="logo_container">
+				<div id="header_logo">ScriBBler</div>
+				<div id="header_logo_tag">Explore, Imagine, Create</div>
+			</div>
+			<div id="button_container">
+				<button id="btn_sign_in" onclick="showSignInModal()">
+					Sign In</button
+				><button id="btn_sign_up" onclick="showSignUpModal()">
+					Sign Up
+				</button>
+			</div>
+		</header>
+
+		<div id="blogs_container">
+			<div class="blog_container_row">
+				<div class="blog_card">
+					<table>
+						<tbody>
+							<tr>
+								<td rowspan="3" class="author_name">Jimi</td>
+								<td class="cardcontent">
+									<h2>Hello there! This is Post 1</h2>
+								</td>
+								<td>
+									<i
+										onclick="showDeletePostModal()"
+										class="fas fa-trash-alt"
+									></i>
+								</td>
+							</tr>
+							<tr>
+								<td rowspan="" class="cardcontent">
+									Lorem ipsum dolor sit amet, consectetur
+									adipiscing elit, sed do eiusmod tempor
+									incididunt ut labore et dolore magna aliqua.
+									Ut enim ad minim veniam, quis nostrud
+									exercitation ullamco laboris nisi ut aliquip
+									ex ea commodo consequat.
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td colspan="2">
+									<i
+										class="fas fa-ellipsis-h"
+										style="bottom: 0"
+									></i>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="blog_card">
+					<table>
+						<tbody>
+							<tr>
+								<td rowspan="3" class="author_name">Jimi</td>
+								<td class="cardcontent">
+									<h2>Hello there! This is Post 2</h2>
+								</td>
+								<td>
+									<i
+										onclick="showDeletePostModal()"
+										class="fas fa-trash-alt"
+									></i>
+								</td>
+							</tr>
+							<tr>
+								<td rowspan="" class="cardcontent">
+									Lorem ipsum dolor sit amet, consectetur
+									adipiscing elit, sed do eiusmod tempor
+									incididunt ut labore et dolore magna aliqua.
+									Ut enim ad minim veniam, quis nostrud
+									exercitation ullamco laboris nisi ut aliquip
+									ex ea commodo consequat.
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td colspan="2">
+									<i
+										class="fas fa-ellipsis-h"
+										style="bottom: 0"
+									></i>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="blog_container_row">
+				<div class="blog_card">
+					<table>
+						<tbody>
+							<tr>
+								<td rowspan="3" class="author_name">Jimi</td>
+								<td class="cardcontent">
+									<h2>Hello there! This is Post 3</h2>
+								</td>
+								<td>
+									<i
+										onclick="showDeletePostModal()"
+										class="fas fa-trash-alt"
+									></i>
+								</td>
+							</tr>
+							<tr>
+								<td rowspan="" class="cardcontent">
+									Lorem ipsum dolor sit amet, consectetur
+									adipiscing elit, sed do eiusmod tempor
+									incididunt ut labore et dolore magna aliqua.
+									Ut enim ad minim veniam, quis nostrud
+									exercitation ullamco laboris nisi ut aliquip
+									ex ea commodo consequat.
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td colspan="2">
+									<i
+										class="fas fa-ellipsis-h"
+										style="bottom: 0"
+									></i>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="blog_card">
+					<table>
+						<tbody>
+							<tr>
+								<td rowspan="3" class="author_name">Jimi</td>
+								<td class="cardcontent">
+									<h2>Hello there! This is Post 4</h2>
+								</td>
+								<td>
+									<i
+										onclick="showDeletePostModal()"
+										class="fas fa-trash-alt"
+									></i>
+								</td>
+							</tr>
+							<tr>
+								<td rowspan="" class="cardcontent">
+									Lorem ipsum dolor sit amet, consectetur
+									adipiscing elit, sed do eiusmod tempor
+									incididunt ut labore et dolore magna aliqua.
+									Ut enim ad minim veniam, quis nostrud
+									exercitation ullamco laboris nisi ut aliquip
+									ex ea commodo consequat.
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td colspan="2">
+									<i
+										class="fas fa-ellipsis-h"
+										style="bottom: 0"
+									></i>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div class="blog_container_row one_content">
+				<div class="blog_card">
+					<table>
+						<tbody>
+							<tr>
+								<td rowspan="3" class="author_name">Jimi</td>
+								<td class="cardcontent">
+									<h2>Hello there! This is Post 4</h2>
+								</td>
+								<td>
+									<i
+										onclick="showDeletePostModal()"
+										class="fas fa-trash-alt"
+									></i>
+								</td>
+							</tr>
+							<tr>
+								<td rowspan="" class="cardcontent">
+									Lorem ipsum dolor sit amet, consectetur
+									adipiscing elit, sed do eiusmod tempor
+									incididunt ut labore et dolore magna aliqua.
+									Ut enim ad minim veniam, quis nostrud
+									exercitation ullamco laboris nisi ut aliquip
+									ex ea commodo consequat.
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td colspan="2">
+									<i
+										class="fas fa-ellipsis-h"
+										style="bottom: 0"
+									></i>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<!-- The Compose Post Modal -->
+		<div id="composePostModal" class="modal">
+			<!-- Modal content -->
+			<div class="modal-content">
+				<div class="modal_header">
+					<h3>Are you sure you want to delete this post?</h3>
+				</div>
+
+				<form class="delete_post_modal">
+					<button id="btn_delete_post_yes" type="submit">Yes</button
+					><button id="btn_delete_post_no" type="submit">No</button>
+				</form>
+			</div>
+		</div>
+
+		<script src="./js/bloglist.js" type="text/javascript" async></script>
+	</body>
+</html>
