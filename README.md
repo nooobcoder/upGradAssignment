@@ -91,3 +91,66 @@ b) The segment called "**postButtons**" consist of 2 buttons -
 "**Create Post**"
 
 ![](https://images.upgrad.com/08da3e14-0a1f-43cd-85e5-c9cd37b4e2c1-buttons.png)
+
+Let us follow some steps to modify our header inside the `<div class="header">` :-
+
+1. Inside the `<div class="header">`, you need to create:-
+1. On clicking the **"Sign Up"** button, a modal should appear on screen. **(You must search on the Internet yourself how you can create a simple modal or you can take a reference from the 'Create Post' modal already created)**. You can use the below link to find a simple modal code:
+
+-   [Modal Code](https://www.w3schools.com/howto/howto_css_modals.asp)
+
+The modal corresponding to the "Sign Up" button must look like this:
+![](https://images.upgrad.com/03cd5684-8860-4838-95f1-da7cb18124fb-signup.png)
+
+a) The title of the modal should be "Get Started". It should be displayed in the center of the modal and you can use any font you wish. You should also display a tiny cross button towards the top-right, which when clicked, would close this modal.
+
+b) This modal would consist of 4 input boxes - for "Full Name", "Username", "Password" and "Confirm Password". Note that the input type of each of these should be - text, text, password, password - respectively.
+
+Also note that when nothing is typed into the input boxes yet, they should display a placeholder with the text "Enter Full Name", "Enter Username", "Enter Password" & "Confirm Password" respectively.
+
+You can use any font you want for this.
+
+c) Below these placeholders, you must create a green-coloured "Sign Up" button. Note that you must make sure that the above 4 input fields are mandatorily filled in by the user (the input fields must be made "required"), without which he/she cannot proceed with clicking the "Sign Up" button. For example, when a user tries to proceed without filling all the fields, such an indication would be displayed:
+
+![](https://images.upgrad.com/1891e7fb-bb03-4fdc-8913-660ab818ee3a-error.png)
+
+Note that you can do this simply by making all the input fields as “required”
+
+You do not need to define any specific action on clicking the Sign Up button.
+
+1. On clicking the "Sign In" button, a modal should appear on screen. The modal corresponding to the "Sign In" button must look like this:
+
+![](https://images.upgrad.com/728dcb02-e1a4-4c0b-874b-e7db5abcdd11-signin.png)
+a) The title of the modal should be "Welcome Back!". You should also display a tiny cross button towards the top-right, which when clicked, would close this modal.
+
+b) This modal would consist of 2 input boxes - for "Username" and "Password". Note that the input type of each of these should be - text and password - respectively.
+
+Note that when nothing is typed into the input boxes yet, they should display a placeholder with the text "Enter Username" and "Enter Password" respectively.
+
+c) Below these placeholders, you must create a green-coloured "Sign In" button. Note that you must make sure that the above 2 input fields are mandatorily filled in by the user (the input fields must be made "required"), without which he/she cannot proceed with clicking the "Sign In" button.
+
+You need not define any specific action on clicking the Sign In button.
+
+d) Below the "Sign In" button, you must display a text called "Not a member? Sign Up". The "Not a member?" portion of the text should be in black, whereas the "Sign Up" portion of the text should be a hyperlink, which when clicked, would hide the sign in modal and display the sign-up modal which you created in the previous segment like this:
+
+**![](https://images.upgrad.com/d3829316-6e87-4119-b72b-693bc548e3dd-signup.png)**
+
+**Centre Buttons**
+
+**![](https://images.upgrad.com/7d14510d-9381-4645-913f-66db0814b674-buttons.png)**
+
+1. On clicking the **"All Posts"** button, it should redirect to a file called "bloglist.html" which will be placed inside our html folder. (For now, this will be an empty page, which we would create fully in the next part of our assignment)
+
+2. On clicking the "Create Post" button, it should display a modal like this:
+
+a) A narrow input box for "Title:"
+
+b) The title of the modal should be "Pen Your Post" as shown in the image below
+
+c) A text area for "Content:"
+
+d) Below them, create a green-coloured "Create" button at the centre which at the present moment, would not do anything when you click on it (later on, we will write an API request for posting a new blog article on the backend, but for now, you don't need to worry about it). The modal should look like this:
+
+**![](https://images.upgrad.com/224af8c8-027e-4731-bfbd-d956ebf12750-create.png)**
+
+e) Also create a tiny cross button at the top-right corner of the modal, which when clicked, would close the modal.
