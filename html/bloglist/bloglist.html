@@ -38,6 +38,151 @@
 			</div>
 		</header>
 
+    <!-- The Sign Up Modal -->
+		<div id="signUpModal" class="modal">
+			<!-- Modal content -->
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<div class="modal_header">
+					<h2>Get Started</h2>
+					<hr />
+				</div>
+				<div class="input_container">
+					<form action="POST">
+
+						<div>
+							<label for="full_name">Full Name</label>
+						</div>
+						<input
+						required
+							type="text"
+							name="full_name"
+							id="full_name"
+							placeholder="Enter Full Name"
+						/>
+					</div>
+					<div class="input_container">
+						<div>
+							<label for="user_name">Username</label>
+						</div>
+						<input
+						required
+							type="text"
+							name="user_name"
+							id="user_name"
+							placeholder="Enter Username"
+						/>
+					</div>
+					<div class="input_container">
+						<div>
+							<label for="password">Password</label>
+						</div>
+						<input
+						required
+							type="password"
+							name="password"
+							id="password"
+							placeholder="Enter Password"
+						/>
+					</div>
+					<div class="input_container">
+						<div>
+							<label for="confirm_password">Confirm Password</label>
+						</div>
+						<input
+						required
+							type="password"
+							name="confirm_password"
+							id="confirm_password"
+							placeholder="Confirm Password"
+						/>
+					</div>
+					<button id="btn_sign_up_submit" type="submit">Sign Up</button>
+					</form>
+			</div>
+		</div>
+		
+
+		<!-- The Sign In Modal -->
+		<div id="signInModal" class="modal">
+			<!-- Modal content -->
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<div class="modal_header">
+					<h2>Welcome Back!</h2>
+					<hr />
+				</div>
+
+					<form action="POST">
+					<div class="input_container">
+						<div>
+							<label for="signin_user_name">Username</label>
+						</div>
+						<input
+						required
+							type="text"
+							name="signin_user_name"
+							id="signin_user_name"
+							placeholder="Enter Username"
+						/>
+					</div>
+					<div class="input_container">
+						<div>
+							<label for="signin_password">Password</label>
+						</div>
+						<input
+						required
+							type="password"
+							name="signin_password"
+							id="signin_password"
+							placeholder="Enter Password"
+						/>
+					</div>
+					<button id="btn_sign_in_submit" type="submit">Sign In</button>
+					<div class="sign_in_modal_footer">Not a member? <a href="#" onclick="raiseSignUp()">Sign Up</a></div>
+					</form>
+					</div>
+		</div>
+
+
+		<!-- The Compose Post Modal -->
+		<div id="composePostModal" class="modal">
+			<!-- Modal content -->
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<div class="modal_header">
+					<h2>Pen Your Post</h2>
+				</div>
+
+					<form action="POST">
+					<div class="input_container">
+						<div>
+							<label for="compose_post_title">Title:</label>
+						</div>
+						<input
+						required
+							type="text"
+							name="compose_post_title"
+							id="compose_post_title"
+						/>
+					</div>
+					<div class="input_container">
+						<div>
+							<label for="compose_post_content">Content</label>
+						</div>
+						<textarea
+						required
+							type="password"
+							name="compose_post_content"
+							id="compose_post_content"
+						></textarea>
+
+					</div>
+					<button id="btn_create_post_submit" type="submit">Create</button>
+					</form>
+					</div>
+		</div>
+
 		<div id="blogs_container">
 			<div class="blog_container_row">
 				<div class="blog_card">
@@ -241,7 +386,7 @@
 		</div>
 
 		<!-- The Compose Post Modal -->
-		<div id="composePostModal" class="modal">
+		<div id="deletePostModal" class="modal">
 			<!-- Modal content -->
 			<div class="modal-content">
 				<div class="modal_header">

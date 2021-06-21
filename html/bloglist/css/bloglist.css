@@ -100,9 +100,78 @@ table i {
 }
 
 /* The Close Button */
+.close {
+	color: #818181;
+	float: right;
+	font-size: 40px;
+	font-weight: bolder;
+}
+
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
 .modal_header {
 	font-family: "Roboto Condensed";
 	font-size: 20px;
+	text-align: center;
+}
+
+.input_container {
+	margin: 20px 0px;
+	font-family: "Roboto Condensed";
+}
+
+.input_container label {
+	font-weight: bold;
+}
+
+.input_container input {
+	margin-top: 5px;
+	background-color: #f1f1f1;
+	padding: 5px 15px;
+	width: 100%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border: none;
+	height: 40px;
+}
+
+.input_container textarea {
+	margin-top: 5px;
+	background-color: #f1f1f1;
+	padding: 5px 15px;
+	width: 100%;
+	font-family: inherit;
+	font-size: inherit;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border: none;
+	height: 200px;
+}
+
+#btn_sign_up_submit,
+#btn_sign_in_submit {
+	background-color: #5eb762;
+	width: 100%;
+	color: white;
+	box-sizing: border-box;
+	font-size: 15px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	height: 40px;
+	cursor: pointer;
+	border: none;
+}
+
+.sign_in_modal_footer {
+	margin-top: 30px;
+	font-family: sans-serif;
+	font-weight: bold;
 	text-align: center;
 }
 

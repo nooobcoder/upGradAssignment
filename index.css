@@ -152,10 +152,3 @@ body {
 	cursor: pointer;
 	border: none;
 }
-
-.sign_in_modal_footer {
-	margin-top: 30px;
-	font-family: sans-serif;
-	font-weight: bold;
-	text-align: center;
-}
