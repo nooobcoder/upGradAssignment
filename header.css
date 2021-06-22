@@ -11,7 +11,9 @@
 	font-weight: 600;
 	color: #2d37ff;
 }
-
+#logo_container {
+	cursor: pointer;
+}
 #header_logo_tag {
 	font-family: "Dancing Script", sans-serif;
 	font-weight: 400;
