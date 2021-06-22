@@ -215,3 +215,83 @@ d) There is a small icon/text "..." next to each post like this:
 On clicking this icon/text, it should open the individual blog post. As of now, what you can do, is redirect it to a new page called as "post.html" whenever the "..." button is clicked.
 
 (You can keep this page empty as of now, and we will fill it later in the next section of our assignment.)
+
+
+
+# Part C: Creating Blog Post
+
+In this section, you would be creating the functionality of the "post.html" page.
+
+Relevant files to work on:  **post.html, post.css, post.js**
+
+This page will consist of the individual blog post of our blogging website. The final outcome of this page would look like this:
+
+**Image 1:**
+
+**![](https://images.upgrad.com/12adcd10-a12c-46c8-8fe8-e33c5037c1ac-post1.png)**
+
+**Image 2:**
+
+![](https://images.upgrad.com/040e39ab-589c-48a7-b128-c1613045b6ec-post2.png)
+
+Some very important things to keep in mind:
+
+1. You must strictly keep HTML, CSS and Javascript portion of the code separate from each other.
+
+2. You must refer to the "post.css" file inside the "css" folder and define all your css inside that file for the "post.html" file
+
+3. You must refer to the "post.js" file inside the "js" folder and define all your Javascript inside that file for the "post.html" file
+
+4. Unless explicitly mentioned otherwise (for example, at some places, it might be mentioned that a certain button MUST be red in colour), you can customize your own CSS for any HTML element you want. However, please keep in mind that the overall appearance of any HTML page must be very similar (if not identical) to the outcome of the screen mentioned prior of each part of the assignment. This means that if certain elements are placed towards the top-right of the screen in the final outcome figure, they MUST be placed at the top-right corner ONLY, failing to do so will lead to deduction of marks. Note that there might be multiple ways in which a certain CSS effect can be achieved. So the exact syntax of the CSS code does not matter, but the overall appearance of any given page must be very similar to the expected outcome.
+
+5. Write the header class into our page.
+
+Carefully place the code for the header class which you created in the last section of the assignment. Basically, we want the header part of the page to be exactly identical to the header portion which we created for the last section.
+
+a) You need to add functionality to the "Edit" button that is positioned towards the top-right corner of the blog body, which would look like this:
+
+**![](https://images.upgrad.com/368be502-edd2-4ee6-8093-35944b66d33e-edit.png)**
+
+When clicked, this edit button would make the blog body editable like this:
+
+**![](https://images.upgrad.com/6d1e1230-aa3d-4ca8-b2e6-f30d1e8bc523-editable.png)**
+
+Note that when the blog body and title are in the “editable” mode, there should be a cursor which would enable the user to edit/erase/add any text he/she wants in it.
+
+While the blog body is in the editable mode, a button called "Save" should be displayed in place of the original "Edit" button like this:
+
+**![](https://images.upgrad.com/ea0acdd0-7aa7-4473-a8ee-2b7275eb6ace-save.png)**
+
+The blog body/title should be placed inside a textarea when it is in the Edit mode.
+
+You need not add any icon/picture in the Save button and just a written text “Save” would be enough.
+
+This Edit button need not necessarily be on the same horizontal line as the blog author name.
+
+While the editable mode is on, the user should be able to edit the text of the blog. When the user is done editing the blog body, he should click on the "Save" button. On clicking the "Save" button, the blog should be saved as it is (new changes which the user has done must be saved). The blog body should reflect the changes that we made in edit mode. After the edit mode is over, the blog body/title should no longer be editable and the "Edit" button should reappear (in place of the "Save" button).
+
+b) Below the body of the blog, there is a "Like" button. In the default state, a statement called "Be the first one to like this!" is displayed just below the "Like" button.
+
+**![](https://images.upgrad.com/7089354e-49d9-4a07-8a9a-8cbca6ad9976-like.png)**
+
+On liking the blog for the first time, this statement must be updated to "1 person likes this!" and the "Like" button must morphe into a button "Liked!" as shown in the figure.
+
+**![](https://images.upgrad.com/cf56c65f-32e2-4a7c-a130-0bd267f1cc3b-liked.png)**
+
+You need not add any icon/picture in the Like button and just a written text “Liked” would be enough.
+
+On liking the blog for the first time, this statement must be updated to "1 person likes this!" and the "Like" button must morphe into a button "Liked!" as shown in the figure.
+
+**![](https://images.upgrad.com/c7b8e28b-7e36-415a-b6d2-b9f9235be638-3likes.png)**
+
+c) Below the "Like" button, there is an input box with a placeholder text "Leave a comment...". The user can type his comments in this box.
+
+**![](https://images.upgrad.com/d37d0f44-854d-4860-b93c-2f44be1af93b-comment_box.png)**
+
+d) Below this box, there is a red coloured "Comment" button, which when clicked must display the typed comment inside the "All Comments" section.
+
+**![](https://images.upgrad.com/e6662b15-2756-4593-8390-0b58e6cd7041-comment_button.png)**
+
+Note that every new comment should be added at the TOP as explained in the figure. You can style the comment section in the way you want, just keeping in mind that individual comments have white as a background and are separated from each other. The background of the entire comment box should be grey as shown in the figure.
+
+**![](https://images.upgrad.com/8ded6081-7048-4bee-9af7-b619acbdf19a-comment_order.png)**
