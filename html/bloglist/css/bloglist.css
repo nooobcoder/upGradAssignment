@@ -1,29 +1,22 @@
 html,
 body {
-	margin: 0px;
+	margin: 0;
 	margin-bottom: 5px;
-	padding: 0px;
+	padding: 0;
 }
-
 body {
 	background-color: orange;
 	background-repeat: repeat-x;
 	background-size: cover;
 	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
 		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 }
-
 #header_logo_tag {
 	color: white;
 }
-
 #header {
 	margin-bottom: 5px;
 }
-
 .blog_container_row {
 	display: flex;
 	margin-bottom: 15px;
@@ -31,17 +24,13 @@ body {
 	flex-direction: row;
 	justify-content: space-evenly;
 }
-
 .blog_card {
 	display: block;
-	margin: 0px 50px;
+	margin: 0 50px;
 	max-height: 250px;
 	overflow: auto;
 	box-shadow: -7px 8px 15px -2px #cd8212;
-	-webkit-box-shadow: -7px 8px 15px -2px #cd8212;
-	-moz-box-shadow: -7px 8px 15px -2px #cd8212;
 }
-
 table .author_name {
 	background-color: white;
 	color: black;
@@ -52,13 +41,10 @@ table .author_name {
 	text-align: center;
 	max-width: 30px;
 }
-
 table {
 	border-radius: 10px;
-
 	background-color: #e8e8e8;
 }
-
 table .cardcontent {
 	padding: 5px 10px;
 	font-size: 13px;
@@ -70,53 +56,41 @@ table .cardcontent {
 }
 .cardcontent {
 	overflow: auto;
-
 	text-overflow: ellipsis;
-	display: -webkit-box;
-	-webkit-line-clamp: 4; /* number of lines to show */
-	-webkit-box-orient: vertical;
 }
 table i {
 	cursor: pointer;
 	padding-right: 20px;
 	padding-bottom: 8px;
 }
-
 .one_content {
-	margin: 0px 25%;
+	margin: 0 25%;
 }
-
-/* MODAL */
 .modal {
-	display: none; /* Hidden by default */
-	position: fixed; /* Stay in place */
-	z-index: 1; /* Sit on top */
+	display: none;
+	position: fixed;
+	z-index: 1;
 	left: 0;
 	top: 0;
-	width: 100%; /* Full width */
-	height: 100%; /* Full height */
-	overflow: auto; /* Enable scroll if needed */
-	background-color: rgb(0, 0, 0); /* Fallback color */
-	background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgb(0, 0, 0, 0.7);
 }
-
-/* Modal Content/Box */
 .modal-content {
 	background-color: #fefefe;
-	margin: 5% auto; /* 15% from the top and centered */
+	margin: 5% auto;
 	padding: 20px;
-	border: 1px solid #888;
-	width: 35%; /* Could be more or less, depending on screen size */
+	border: #888 solid 1px;
+	width: 35%;
 }
-
-/* The Close Button */
 .close {
 	color: #818181;
 	float: right;
 	font-size: 40px;
 	font-weight: bolder;
 }
-
 .close:hover,
 .close:focus {
 	color: black;
@@ -128,28 +102,22 @@ table i {
 	font-size: 20px;
 	text-align: center;
 }
-
 .input_container {
-	margin: 20px 0px;
+	margin: 20px 0;
 	font-family: "Roboto Condensed";
 }
-
 .input_container label {
 	font-weight: bold;
 }
-
 .input_container input {
 	margin-top: 5px;
 	background-color: #f1f1f1;
 	padding: 5px 15px;
 	width: 100%;
 	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	border: none;
 	height: 40px;
 }
-
 .input_container textarea {
 	margin-top: 5px;
 	background-color: #f1f1f1;
@@ -158,12 +126,9 @@ table i {
 	font-family: inherit;
 	font-size: inherit;
 	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	border: none;
 	height: 200px;
 }
-
 #btn_sign_up_submit,
 #btn_sign_in_submit {
 	background-color: #5eb762;
@@ -171,24 +136,19 @@ table i {
 	color: white;
 	box-sizing: border-box;
 	font-size: 15px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	height: 40px;
 	cursor: pointer;
 	border: none;
 }
-
 .sign_in_modal_footer {
 	margin-top: 30px;
 	font-family: sans-serif;
 	font-weight: bold;
 	text-align: center;
 }
-
 .delete_post_modal {
 	display: flex;
 	align-items: center;
-	-webkit-justify-content: space-between;
 	justify-content: space-between;
 }
 .delete_post_modal button {
@@ -199,11 +159,9 @@ table i {
 	font-size: 15px;
 	border: none;
 }
-
 #btn_delete_post_yes {
 	background-color: #e45449;
 }
-
 #btn_delete_post_no {
 	background-color: #5eb762;
 }

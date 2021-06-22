@@ -2,89 +2,70 @@ html,
 body {
 	height: 100%;
 }
-
 body {
 	background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 }
 button {
 	cursor: pointer;
 }
 [contenteditable] {
-	outline: 0px solid transparent;
+	outline: 0 solid transparent;
 }
-
-/* The Modal (background) */
 .modal {
-	display: none; /* Hidden by default */
-	position: fixed; /* Stay in place */
-	z-index: 1; /* Sit on top */
+	display: none;
+	position: fixed;
+	z-index: 1;
 	left: 0;
 	top: 0;
-	width: 100%; /* Full width */
-	height: 100%; /* Full height */
-	overflow: auto; /* Enable scroll if needed */
-	background-color: rgb(0, 0, 0); /* Fallback color */
-	background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgb(0, 0, 0, 0.7);
 }
-
-/* Modal Content/Box */
 .modal-content {
 	background-color: #fefefe;
-	margin: 5% auto; /* 15% from the top and centered */
+	margin: 5% auto;
 	padding: 20px;
-	border: 1px solid #888;
-	width: 40%; /* Could be more or less, depending on screen size */
+	border: #888 solid 1px;
+	width: 40%;
 }
-
-/* The Close Button */
 .close {
 	color: #818181;
 	float: right;
 	font-size: 40px;
 	font-weight: bolder;
 }
-
 .close:hover,
 .close:focus {
 	color: black;
 	text-decoration: none;
 	cursor: pointer;
 }
-
 .modal_header {
 	font-family: "Roboto Condensed";
 	font-size: 20px;
 	text-align: center;
 }
-
 .input_container {
-	margin: 20px 0px;
+	margin: 20px 0;
 	font-family: "Roboto Condensed";
 }
-
 .input_container label {
 	font-weight: bold;
 }
-
 #compose_post_title {
 	width: 50%;
 }
-
 .input_container input {
 	margin-top: 5px;
 	background-color: #f1f1f1;
 	padding: 5px 15px;
 	width: 100%;
 	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	border: none;
 	height: 40px;
 }
-
 .input_container textarea {
 	margin-top: 5px;
 	background-color: #f1f1f1;
@@ -93,19 +74,15 @@ button {
 	font-family: inherit;
 	font-size: inherit;
 	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	border: none;
 	height: 200px;
 }
-
 .sign_in_modal_footer {
 	margin-top: 30px;
 	font-family: sans-serif;
 	font-weight: bold;
 	text-align: center;
 }
-
 #btn_sign_up_submit,
 #btn_sign_in_submit {
 	background-color: #5eb762;
@@ -113,13 +90,10 @@ button {
 	color: white;
 	box-sizing: border-box;
 	font-size: 15px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	height: 40px;
 	cursor: pointer;
 	border: none;
 }
-
 #btn_create_post_submit {
 	background-color: #5eb762;
 	width: 15%;
@@ -128,41 +102,32 @@ button {
 	display: block;
 	box-sizing: border-box;
 	font-size: 15px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	height: 35px;
 	cursor: pointer;
 	border: none;
 }
-
 #post_container {
 	display: flex;
 	margin: 10px 50px;
 	justify-content: space-between;
 	flex-direction: column;
 }
-
 #post_heading {
 	align-self: center;
 	font-family: "Roboto Condensed", sans-serif;
 }
-
 #author_edit_post {
 	align-items: center;
 	display: flex;
 	justify-content: space-between;
 }
-
 #btn_edit_post {
 	background-color: #e33864;
 	color: white;
 	border: none;
 	padding: 10px;
-	box-shadow: 0px 10px 12px 1px #f0b3c3;
-	-webkit-box-shadow: 0px 10px 12px 1px #f0b3c3;
-	-moz-box-shadow: 0px 10px 12px 1px #f0b3c3;
+	box-shadow: 0 10px 12px 1px #f0b3c3;
 }
-
 .btn_to_left {
 	background-color: #e33864;
 	color: white;
@@ -173,15 +138,11 @@ button {
 	width: auto;
 	margin-bottom: 10px;
 	border-radius: 3px;
-	box-shadow: 0px 10px 12px 1px #f0b3c3;
-	-webkit-box-shadow: 0px 10px 12px 1px #f0b3c3;
-	-moz-box-shadow: 0px 10px 12px 1px #f0b3c3;
+	box-shadow: 0 10px 12px 1px #f0b3c3;
 }
-
 #author_name {
 	font-family: "Dancing Script", sans-serif;
 }
-
 #post_body {
 	font-family: "Slabo 27px";
 	text-align: justify;
@@ -189,18 +150,15 @@ button {
 	overflow: auto;
 	text-justify: inter-word;
 }
-
 #like_counter {
 	font-family: monospace;
 	margin-top: 8px;
 	margin-bottom: 30px;
 }
-
 #comment_composer {
 	align-self: flex-start;
 	font-family: "Courier New", Courier, monospace;
 }
-
 #post_comments {
 	list-style-type: none;
 	margin-bottom: 10px;
@@ -212,11 +170,10 @@ button {
 	margin-bottom: 10px;
 	padding: 15px 8px;
 }
-
 .editing_post_heading {
-	border: 2px solid #f2bfcb !important;
+	border: #f2bfcb solid 2px !important ;
 }
 .editing_post_body {
-	border: 1px solid blue;
+	border: blue solid 1px;
 	padding: 10px;
 }
