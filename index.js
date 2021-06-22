@@ -1,6 +1,12 @@
+// Modal Nodes
 var signUpModal = document.getElementById("signUpModal");
 var signInModal = document.getElementById("signInModal");
 var composePostModal = document.getElementById("composePostModal");
+
+// Hiding the modals on first render
+signUpModal.style.display = "none";
+signInModal.style.display = "none";
+composePostModal.style.display = "none";
 
 const showSignUpModal = () => {
 	signUpModal.style.display = "block";
@@ -13,6 +19,7 @@ const showComposePostModal = () => {
 	composePostModal.style.display = "block";
 };
 
+// Hides the login modal and opens the signup modal
 const raiseSignUp = () => {
 	signInModal.style.display = "none";
 	showSignUpModal();
@@ -37,7 +44,3 @@ window.onclick = function (event) {
 		composePostModal.style.display = "none";
 	}
 };
-
-signUpModal.style.display = "none";
-signInModal.style.display = "none";
-composePostModal.style.display = "none";
