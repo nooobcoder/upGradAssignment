@@ -9,6 +9,12 @@ body {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 }
+button {
+	cursor: pointer;
+}
+[contenteditable] {
+	outline: 0px solid transparent;
+}
 
 /* The Modal (background) */
 .modal {
@@ -162,9 +168,9 @@ body {
 	color: white;
 	border: none;
 	margin-top: 10px;
-	padding: 10px;
+	padding: 10px 20px;
 	align-self: flex-start;
-	width: 10%;
+	width: auto;
 	margin-bottom: 10px;
 	border-radius: 3px;
 	box-shadow: 0px 10px 12px 1px #f0b3c3;
@@ -180,11 +186,13 @@ body {
 	font-family: "Slabo 27px";
 	text-align: justify;
 	font-size: large;
+	overflow: auto;
 	text-justify: inter-word;
 }
 
 #like_counter {
 	font-family: monospace;
+	margin-top: 8px;
 	margin-bottom: 30px;
 }
 
@@ -203,4 +211,12 @@ body {
 	background-color: white;
 	margin-bottom: 10px;
 	padding: 15px 8px;
+}
+
+.editing_post_heading {
+	border: 2px solid #f2bfcb !important;
+}
+.editing_post_body {
+	border: 1px solid blue;
+	padding: 10px;
 }

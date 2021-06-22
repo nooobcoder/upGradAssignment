@@ -156,7 +156,7 @@
 		</div>
 
 		<div id="post_container">
-			<div id="post_heading">
+			<div id="post_heading" contenteditable="true">
 				<h1>The legacy of Jimi Hendrix</h1>
 			</div>
 			<div id="author_edit_post">
@@ -167,40 +167,32 @@
 				</button>
 			</div>
 			<div id="post_body">
-				<p>
-					On September 18, 1970, American musician Jimi Hendrix died
-					in London at the age of 27. One of the 1960s' most
-					influential guitarists, he was described by the Rock and
-					Roll Hall of Fame as "arguably the greatest instrumentalist
-					in the history of rock music."[1]
-				</p>
-				<p>
-					For some days prior to his death, Hendrix had been in poor
-					health, in part from fatigue caused by overwork, a chronic
-					lack of sleep, and an assumed influenza-related illness.
-					Insecurities about his personal relationships, as well as
-					disillusionment with the music industry, had also
-					contributed to his frustration. Although the details of his
-					final hours and death are disputed, Hendrix spent much of
-					his last day alive with Monika Dannemann. In the morning
-					hours of September 18, Dannemann found Hendrix unresponsive
-					in her apartment at the Samarkand Hotel, 22 Lansdowne
-					Crescent, Notting Hill. She called for an ambulance at 11:18
-					a.m., and Hendrix was taken to St Mary Abbot's Hospital,
-					where an attempt was made to resuscitate him. He was
-					pronounced dead at 12:45 p.m.
-				</p>
-				<p>
-					The post-mortem examination concluded that Hendrix aspirated
-					on his own vomit and died of asphyxia while intoxicated with
-					barbiturates. At the inquest, the coroner, finding no
-					evidence of suicide, and lacking sufficient evidence of the
-					circumstances, recorded an open verdict. Dannemann stated
-					that Hendrix had taken nine of her prescribed Vesparax
-					sleeping tablets, 18 times the recommended dosage.
-				</p>
+				On September 18, 1970, American musician Jimi Hendrix died in
+				London at the age of 27. One of the 1960s' most influential
+				guitarists, he was described by the Rock and Roll Hall of Fame
+				as "arguably the greatest instrumentalist in the history of rock
+				music."[1] For some days prior to his death, Hendrix had been in
+				poor health, in part from fatigue caused by overwork, a chronic
+				lack of sleep, and an assumed influenza-related illness.
+				Insecurities about his personal relationships, as well as
+				disillusionment with the music industry, had also contributed to
+				his frustration. Although the details of his final hours and
+				death are disputed, Hendrix spent much of his last day alive
+				with Monika Dannemann. In the morning hours of September 18,
+				Dannemann found Hendrix unresponsive in her apartment at the
+				Samarkand Hotel, 22 Lansdowne Crescent, Notting Hill. She called
+				for an ambulance at 11:18 a.m., and Hendrix was taken to St Mary
+				Abbot's Hospital, where an attempt was made to resuscitate him.
+				He was pronounced dead at 12:45 p.m. The post-mortem examination
+				concluded that Hendrix aspirated on his own vomit and died of
+				asphyxia while intoxicated with barbiturates. At the inquest,
+				the coroner, finding no evidence of suicide, and lacking
+				sufficient evidence of the circumstances, recorded an open
+				verdict. Dannemann stated that Hendrix had taken nine of her
+				prescribed Vesparax sleeping tablets, 18 times the recommended
+				dosage.
 			</div>
-			<button id="btn_like" class="btn_to_left">
+			<button id="btn_like" class="btn_to_left" onclick="describeLikes()">
 				<i class="fas fa-thumbs-up"></i> Like
 			</button>
 			<div id="like_counter"></div>
@@ -211,14 +203,15 @@
 				rows="10"
 				placeholder="Leave a comment..."
 			></textarea>
-			<button id="btn_comment" class="btn_to_left">Comment</button>
+			<button id="btn_comment" class="btn_to_left" onclick="addComment()">
+				Comment
+			</button>
 
 			<div id="comments_container">
 				<h3>All Comments</h3>
 				<ul id="post_comments">
-					<li class="comment">Sample Text 1</li>
-					<li class="comment">Sample Text 2</li>
-					<li class="comment">Sample Text 3</li>
+					<li class="comment">Second Comment</li>
+					<li class="comment">First Comment</li>
 				</ul>
 			</div>
 		</div>
