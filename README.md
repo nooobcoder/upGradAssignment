@@ -1,5 +1,5 @@
 ### Final Preview of the app
-[](https://s6.gifyu.com/images/Site-Navigation.gif)
+[](/codenavigation/nav.gif)
 
 # Assignment - Course 2
 
