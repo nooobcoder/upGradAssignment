@@ -38,7 +38,7 @@
 			</div>
 		</header>
 
-    <!-- The Sign Up Modal -->
+		<!-- The Sign Up Modal -->
 		<div id="signUpModal" class="modal">
 			<!-- Modal content -->
 			<div class="modal-content">
@@ -47,14 +47,13 @@
 					<h2>Get Started</h2>
 					<hr />
 				</div>
-				<div class="input_container">
-					<form action="POST">
-
+				<form action="POST">
+					<div class="input_container">
 						<div>
 							<label for="full_name">Full Name</label>
 						</div>
 						<input
-						required
+							required
 							type="text"
 							name="full_name"
 							id="full_name"
@@ -66,7 +65,7 @@
 							<label for="user_name">Username</label>
 						</div>
 						<input
-						required
+							required
 							type="text"
 							name="user_name"
 							id="user_name"
@@ -78,7 +77,7 @@
 							<label for="password">Password</label>
 						</div>
 						<input
-						required
+							required
 							type="password"
 							name="password"
 							id="password"
@@ -87,21 +86,24 @@
 					</div>
 					<div class="input_container">
 						<div>
-							<label for="confirm_password">Confirm Password</label>
+							<label for="confirm_password"
+								>Confirm Password</label
+							>
 						</div>
 						<input
-						required
+							required
 							type="password"
 							name="confirm_password"
 							id="confirm_password"
 							placeholder="Confirm Password"
 						/>
 					</div>
-					<button id="btn_sign_up_submit" type="submit">Sign Up</button>
-					</form>
+					<button id="btn_sign_up_submit" type="submit">
+						Sign Up
+					</button>
+				</form>
 			</div>
 		</div>
-		
 
 		<!-- The Sign In Modal -->
 		<div id="signInModal" class="modal">
@@ -113,13 +115,13 @@
 					<hr />
 				</div>
 
-					<form action="POST">
+				<form action="POST">
 					<div class="input_container">
 						<div>
 							<label for="signin_user_name">Username</label>
 						</div>
 						<input
-						required
+							required
 							type="text"
 							name="signin_user_name"
 							id="signin_user_name"
@@ -131,19 +133,23 @@
 							<label for="signin_password">Password</label>
 						</div>
 						<input
-						required
+							required
 							type="password"
 							name="signin_password"
 							id="signin_password"
 							placeholder="Enter Password"
 						/>
 					</div>
-					<button id="btn_sign_in_submit" type="submit">Sign In</button>
-					<div class="sign_in_modal_footer">Not a member? <a href="#" onclick="raiseSignUp()">Sign Up</a></div>
-					</form>
+					<button id="btn_sign_in_submit" type="submit">
+						Sign In
+					</button>
+					<div class="sign_in_modal_footer">
+						Not a member?
+						<a href="#" onclick="raiseSignUp()">Sign Up</a>
 					</div>
+				</form>
+			</div>
 		</div>
-
 
 		<!-- The Compose Post Modal -->
 		<div id="composePostModal" class="modal">
@@ -154,13 +160,13 @@
 					<h2>Pen Your Post</h2>
 				</div>
 
-					<form action="POST">
+				<form action="POST">
 					<div class="input_container">
 						<div>
 							<label for="compose_post_title">Title:</label>
 						</div>
 						<input
-						required
+							required
 							type="text"
 							name="compose_post_title"
 							id="compose_post_title"
@@ -171,16 +177,16 @@
 							<label for="compose_post_content">Content</label>
 						</div>
 						<textarea
-						required
-							type="password"
+							required
 							name="compose_post_content"
 							id="compose_post_content"
 						></textarea>
-
 					</div>
-					<button id="btn_create_post_submit" type="submit">Create</button>
-					</form>
-					</div>
+					<button id="btn_create_post_submit" type="submit">
+						Create
+					</button>
+				</form>
+			</div>
 		</div>
 
 		<div id="blogs_container">
@@ -201,7 +207,7 @@
 								</td>
 							</tr>
 							<tr>
-								<td rowspan="" class="cardcontent">
+								<td class="cardcontent">
 									Lorem ipsum dolor sit amet, consectetur
 									adipiscing elit, sed do eiusmod tempor
 									incididunt ut labore et dolore magna aliqua.
@@ -230,7 +236,7 @@
 							<tr>
 								<td rowspan="3" class="author_name">Jimi</td>
 								<td class="cardcontent">
-									<h2>Hello there! This is Post 2</h2>
+									<h2>Hello there! This is Post 1</h2>
 								</td>
 								<td>
 									<i
@@ -240,7 +246,7 @@
 								</td>
 							</tr>
 							<tr>
-								<td rowspan="" class="cardcontent">
+								<td class="cardcontent">
 									Lorem ipsum dolor sit amet, consectetur
 									adipiscing elit, sed do eiusmod tempor
 									incididunt ut labore et dolore magna aliqua.
@@ -270,7 +276,7 @@
 							<tr>
 								<td rowspan="3" class="author_name">Jimi</td>
 								<td class="cardcontent">
-									<h2>Hello there! This is Post 3</h2>
+									<h2>Hello there! This is Post 1</h2>
 								</td>
 								<td>
 									<i
@@ -280,7 +286,7 @@
 								</td>
 							</tr>
 							<tr>
-								<td rowspan="" class="cardcontent">
+								<td class="cardcontent">
 									Lorem ipsum dolor sit amet, consectetur
 									adipiscing elit, sed do eiusmod tempor
 									incididunt ut labore et dolore magna aliqua.
@@ -309,7 +315,7 @@
 							<tr>
 								<td rowspan="3" class="author_name">Jimi</td>
 								<td class="cardcontent">
-									<h2>Hello there! This is Post 4</h2>
+									<h2>Hello there! This is Post 1</h2>
 								</td>
 								<td>
 									<i
@@ -319,7 +325,7 @@
 								</td>
 							</tr>
 							<tr>
-								<td rowspan="" class="cardcontent">
+								<td class="cardcontent">
 									Lorem ipsum dolor sit amet, consectetur
 									adipiscing elit, sed do eiusmod tempor
 									incididunt ut labore et dolore magna aliqua.
@@ -360,7 +366,7 @@
 								</td>
 							</tr>
 							<tr>
-								<td rowspan="" class="cardcontent">
+								<td class="cardcontent">
 									Lorem ipsum dolor sit amet, consectetur
 									adipiscing elit, sed do eiusmod tempor
 									incididunt ut labore et dolore magna aliqua.
@@ -370,7 +376,7 @@
 								</td>
 							</tr>
 							<tr>
-								<td></td>
+								<td> </td>
 								<td colspan="2">
 									<i
 										onclick="location.href='../posts/post.html'"
