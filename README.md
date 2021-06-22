@@ -1,3 +1,6 @@
+### Final Preview of the app
+[](https://s6.gifyu.com/images/Site-Navigation.gif)
+
 # Assignment - Course 2
 
 ## Project Brief
