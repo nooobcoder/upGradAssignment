@@ -20,6 +20,7 @@
 		/>
 	</head>
 	<body>
+		<!-- Website Header -->
 		<header id="header">
 			<div id="logo_container">
 				<div id="header_logo">ScriBBler</div>
@@ -43,7 +44,10 @@
 					<h2>Get Started</h2>
 					<hr />
 				</div>
-				<form action="POST">
+				<form
+					action="GET"
+					onsubmit="window.alert('Submitted'); event.preventDefault();"
+				>
 					<div class="input_container">
 						<div>
 							<label for="full_name">Full Name</label>
@@ -111,7 +115,10 @@
 					<hr />
 				</div>
 
-				<form action="POST">
+				<form
+					action="GET"
+					onsubmit="window.alert('Submitted'); event.preventDefault();"
+				>
 					<div class="input_container">
 						<div>
 							<label for="signin_user_name">Username</label>
@@ -156,7 +163,10 @@
 					<h2>Pen Your Post</h2>
 				</div>
 
-				<form action="POST">
+				<form
+					action="GET"
+					onsubmit="window.alert('Submitted'); event.preventDefault();"
+				>
 					<div class="input_container">
 						<div>
 							<label for="compose_post_title">Title:</label>
@@ -186,6 +196,7 @@
 			</div>
 		</div>
 
+		<!-- Central Components to compose and view all posts -->
 		<div id="container">
 			<div class="button_container">
 				<button
@@ -194,7 +205,11 @@
 				>
 					All Posts
 				</button>
-				<button id="btn_create_post" onclick="showComposePostModal()">
+				<button
+					id="btn_create_post"
+					onsubmit=""
+					onclick="showComposePostModal()"
+				>
 					Create Post
 				</button>
 			</div>

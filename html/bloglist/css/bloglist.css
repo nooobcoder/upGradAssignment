@@ -29,14 +29,13 @@ body {
 	margin-bottom: 15px;
 	align-items: center;
 	flex-direction: row;
-
 	justify-content: space-evenly;
 }
 
 .blog_card {
 	display: block;
 	margin: 0px 50px;
-	max-height: 300px;
+	max-height: 250px;
 	overflow: auto;
 	box-shadow: -7px 8px 15px -2px #cd8212;
 	-webkit-box-shadow: -7px 8px 15px -2px #cd8212;
@@ -51,6 +50,7 @@ table .author_name {
 	border-bottom-left-radius: 10px;
 	font-weight: 600;
 	text-align: center;
+	max-width: 30px;
 }
 
 table {
@@ -60,12 +60,22 @@ table {
 }
 
 table .cardcontent {
-	padding: 10px;
+	padding: 5px 10px;
 	font-size: 13px;
 	text-align: justify;
 	text-justify: inter-word;
 }
+.cardcontent::-webkit-scrollbar {
+	display: none;
+}
+.cardcontent {
+	overflow: auto;
 
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 4; /* number of lines to show */
+	-webkit-box-orient: vertical;
+}
 table i {
 	cursor: pointer;
 	padding-right: 20px;
