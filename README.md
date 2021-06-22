@@ -1,5 +1,5 @@
 ### Final Preview of the app
-[](/codenavigation/nav.gif)
+[Site Navigation Preview](https://github.com/nooobcoder/upGradAssignment/blob/master/codenavigation/nav.gif)
 
 # Assignment - Course 2
 
