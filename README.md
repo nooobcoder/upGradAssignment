@@ -1,10 +1,19 @@
 ### Hosted Site URL
-The site is now accessible at the below URL:
-
-[](https://nooobcoder.github.io/upGradAssignment/)
+> The site is now accessible at the below URL:
+> https://nooobcoder.github.io/upGradAssignment/
 
 ### Final Preview of the app
 [Site Navigation Preview](https://github.com/nooobcoder/upGradAssignment/blob/master/codenavigation/nav.gif)
+
+# Goals (Milestone)
+
+ - ~~Design Part A~~ ✅
+ - ~~Design Part B~~ ✅
+ - ~~Design Part C~~ ✅
+ - ~~Test HTML Validity~~ ✅
+ - ~~Test JS reporting errors~~ ✅
+ - ~~Test for performance~~ ✅
+ - ~~Release for production~~ ✅
 
 # Assignment - Course 2
 
