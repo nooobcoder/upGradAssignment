@@ -1,6 +1,8 @@
 ### Hosted Site URL
 The site is now accessible at the below URL:
+
 [](https://nooobcoder.github.io/upGradAssignment/)
+
 ### Final Preview of the app
 [Site Navigation Preview](https://github.com/nooobcoder/upGradAssignment/blob/master/codenavigation/nav.gif)
 
