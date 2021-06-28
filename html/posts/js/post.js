@@ -43,8 +43,6 @@ window.onclick = function (event) {
 signUpModal.style.display = "none";
 signInModal.style.display = "none";
 
-// post_heading editing_post_heading
-// post_body editing_post_body
 var postHeaderDiv = document.getElementById("post_heading");
 var postContentDiv = document.getElementById("post_body");
 var editing = false;
