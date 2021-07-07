@@ -1,10 +1,12 @@
 .app_heading {
 	color: #80696a;
+	font-size: 3rem;
 }
 
 .search_span > * {
 	margin: 0px 10px;
 	border: none;
+	font-size: 1.2rem;
 	border-radius: 5px;
 	padding: 8px 10px;
 }

@@ -35,7 +35,10 @@ const Header = () => {
 				if (searchResult !== null) {
 					actionDispatcher(setSearchResult(searchResult));
 					setStatusText("");
-				} else setStatusText("No data has been recieved");
+				} else {
+					setStatusText("No data has been recieved");
+					actionDispatcher(setSearchResult(null));
+				}
 			}
 		} catch (error) {
 			console.error(error);
@@ -45,13 +48,19 @@ const Header = () => {
 	};
 	return (
 		<Fragment>
-			<h1 className={styles.app_heading}>Recipe Finder</h1>
+			<h2 className={styles.app_heading}>Recipe Finder</h2>
 			<span className={styles.search_span}>
 				<input
 					type="text"
 					placeholder="Enter the Name of the Dish"
 					className={styles.input_recipe}
 					ref={searchInput}
+					onKeyDown={(event) => {
+						if (event.which === 13 || event.keyCode === 13) {
+							setLoadingTo(true);
+							searchMealAPI();
+						}
+					}}
 				/>
 				<button
 					onClick={() => {
