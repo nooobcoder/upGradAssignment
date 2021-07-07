@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = { searchResult: null };
+const initialState = { meals: null };
 
 const searchSlice = createSlice({
 	name: "search",
@@ -9,7 +9,7 @@ const searchSlice = createSlice({
 		setSearchResult: (prevState, { payload }) => {
 			return {
 				...prevState,
-				searchResult: payload,
+				meals: payload,
 			};
 		},
 	},
