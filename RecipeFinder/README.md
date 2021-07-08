@@ -1,5 +1,14 @@
 #
 
+[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
+![Maintaner](https://img.shields.io/badge/maintainer-Ankur%20Paul-violet)
+[![Website Status](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://shields.io/)
+[![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](http://ansicolortags.readthedocs.io/?badge=latest)
+[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/nooobcoder/upGradAssignment/blob/master/RecipeFinder/LICENSE)
+[![licensebuttons by-nc](https://licensebuttons.net/l/by-nc/3.0/88x31.png)](https://creativecommons.org/licenses/by-nc/4.0)
+
 **Site Deployed on:** [https://sharp-tesla-44f31a.netlify.app/](https://sharp-tesla-44f31a.netlify.app/)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/587b8f22-d148-419b-ac65-76a3387e6987/deploy-status)](https://app.netlify.com/sites/sharp-tesla-44f31a/deploys)
