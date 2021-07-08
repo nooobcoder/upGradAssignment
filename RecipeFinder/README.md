@@ -1,6 +1,6 @@
 #
 
-**Site Deployed on:** [https://60e71426b4eb35371c9c5d52--sharp-tesla-44f31a.netlify.app/](https://60e71426b4eb35371c9c5d52--sharp-tesla-44f31a.netlify.app/)
+**Site Deployed on:** [https://60e71426b4eb35371c9c5d52--sharp-tesla-44f31a.netlify.app/](https://sharp-tesla-44f31a.netlify.app/)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/587b8f22-d148-419b-ac65-76a3387e6987/deploy-status)](https://app.netlify.com/sites/sharp-tesla-44f31a/deploys)
 
