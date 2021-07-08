@@ -1,3 +1,26 @@
+#
+
+**Site Deployed on:** [https://60e71426b4eb35371c9c5d52--sharp-tesla-44f31a.netlify.app/](https://60e71426b4eb35371c9c5d52--sharp-tesla-44f31a.netlify.app/)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/587b8f22-d148-419b-ac65-76a3387e6987/deploy-status)](https://app.netlify.com/sites/sharp-tesla-44f31a/deploys)
+
+## Build Steps
+
+After you have cloned the repository, head out to the **RecipeFinder** folder and have a look at the `package.json` file in the root of that folder.
+
+![Project Dependencies](readmeassets/dependencies.png)
+![Project Scripts](readmeassets/scripts.png)
+
+**Have a look at the dependencies, and the build scripts**
+
+After you have looked into the supported scripts, you should have decided to serve a development version or a production version.
+
+- `yarn run dev` to create a development server. NOTE: The port of the dev server is reflected in the **dev** server as in the `.env` file.
+  ![Status of yarn dev](readmeassets/yarndev.png)
+- `yarn build` to create a production version of the app. After this command is executed, find the static assets generated into the **build/** folder from which you can serve the static site.
+
+---
+
 ## Problem Statement
 
 **Goal**: You have to create a web page using React, which looks like the image below:
