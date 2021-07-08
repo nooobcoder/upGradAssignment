@@ -4,6 +4,16 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/587b8f22-d148-419b-ac65-76a3387e6987/deploy-status)](https://app.netlify.com/sites/sharp-tesla-44f31a/deploys)
 
+## TODOS
+
+- [ ] The app is highly dependent on the [Meal DB API](https://www.themealdb.com/api.php) Create an `.env` file in the root of the folder (if does not exists) and specify the following key
+
+| KEY                  | VALUE                      |
+| -------------------- | -------------------------- |
+| REACT_APP_MEALDB_API | https://www.themealdb.com/ |
+
+![Project Dependencies](readmeassets/envfile.png)
+
 ## Build Steps
 
 After you have cloned the repository, head out to the **RecipeFinder** folder and have a look at the `package.json` file in the root of that folder.
