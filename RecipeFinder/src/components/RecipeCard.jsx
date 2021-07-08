@@ -1,15 +1,41 @@
 import styles from "../styles/RecipeCard.module.css";
 import "../../node_modules/font-awesome/css/font-awesome.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 
 const RecipeCard = () => {
-	const [isFavorite, toggleFavorite] = useState(false);
 	const { meals } = useSelector(({ search }) => search);
+	const [isFavorite, toggleFavorite] = useState([]);
+
+	/**
+	 * *Updates the isFavorite array whenever the meals array change (due to a new search query)
+	 */
+	useEffect(() => {
+		if (meals === null) toggleFavorite([]);
+		else toggleFavorite(() => new Array(meals.length).fill(false));
+	}, [meals]);
+
+	console.log(isFavorite);
+
+	/**
+	 * *Toggles the favorite status at the respective index of clicked card.
+	 * @param {number} index
+	 */
+	const toggleFavoriteStatus = (index) => {
+		/**
+		 * *This alters the favorited state onclick of the respective card. It uses the previous state snapshot and alters the particular index of the clicked card item.
+		 * @param(array) prevState
+		 */
+		toggleFavorite((prevState) => {
+			return prevState.map((value, valIndex) =>
+				valIndex === index ? !value : value
+			);
+		});
+	};
 
 	return (
 		meals &&
-		meals?.map((meal) => {
+		meals?.map((meal, mealIndex) => {
 			let ingredientsKeyNames = [];
 			let quantityKeyNames = [];
 
@@ -25,11 +51,12 @@ const RecipeCard = () => {
 
 						<i
 							className={"fa fa-heart ".concat(
-								`${isFavorite ? styles.red : ""}`
+								`${isFavorite[mealIndex] ? styles.red : ""}`
 							)}
-							onClick={() => toggleFavorite((prevState) => !prevState)}
+							onClick={() => toggleFavoriteStatus(mealIndex)}
 						></i>
 					</div>
+
 					<div className={styles.recipe_container}>
 						<img src={meal.strMealThumb} alt="food_image" />
 						<div className={styles.recipe_meta}>
