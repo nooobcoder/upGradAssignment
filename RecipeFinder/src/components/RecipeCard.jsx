@@ -15,8 +15,6 @@ const RecipeCard = () => {
 		else toggleFavorite(() => new Array(meals.length).fill(false));
 	}, [meals]);
 
-	console.log(isFavorite);
-
 	/**
 	 * *Toggles the favorite status at the respective index of clicked card.
 	 * @param {number} index
