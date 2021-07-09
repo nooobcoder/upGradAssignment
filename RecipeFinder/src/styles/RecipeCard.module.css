@@ -11,12 +11,23 @@
 	position: relative;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 }
 
-.heading_container > i {
+.heading_container > h3 {
+	flex: 1;
+}
+
+/* .heading_container > svg {
 	position: absolute;
+	cursor: pointer;
+	right: 10px;
+	margin-right: 50px;
+} */
+
+.icon {
+	position: relative;
 	cursor: pointer;
 	right: 10px;
 }
