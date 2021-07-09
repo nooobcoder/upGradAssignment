@@ -1,6 +1,8 @@
 import styles from "../styles/RecipeCard.module.css";
-import "../../node_modules/font-awesome/css/font-awesome.css";
 import { useEffect, useState } from "react";
+import { faHeart } from "@fortawesome/free-regular-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { useSelector } from "react-redux";
 
 const RecipeCard = () => {
@@ -46,13 +48,21 @@ const RecipeCard = () => {
 				<div className={styles.recipe_card} key={meal.idMeal}>
 					<div className={styles.heading_container}>
 						<h3>{meal.strMeal}</h3>
-
-						<i
+						<div>
+							<FontAwesomeIcon
+								icon={faHeart}
+								className={`${styles.icon} ${
+									isFavorite[mealIndex] ? styles.red : ""
+								}`}
+								onClick={() => toggleFavoriteStatus(mealIndex)}
+							/>
+						</div>
+						{/* 	<i
 							className={"fa fa-heart ".concat(
 								`${isFavorite[mealIndex] ? styles.red : ""}`
 							)}
 							onClick={() => toggleFavoriteStatus(mealIndex)}
-						></i>
+						></i> */}
 					</div>
 
 					<div className={styles.recipe_container}>

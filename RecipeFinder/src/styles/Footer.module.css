@@ -13,3 +13,10 @@
 	color: blueviolet;
 	text-align: center;
 }
+
+a,
+a:visited,
+a:hover,
+a:active {
+	color: inherit;
+}
